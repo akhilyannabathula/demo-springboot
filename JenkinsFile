@@ -1,0 +1,20 @@
+#deploy master blaster pipeline
+steps{
+    "login to server":{
+
+        oracle oci server login "username", "password";
+    }
+
+    "get latest code":{
+        git clone "url"
+    }
+
+    "build":{
+        mvn install "masterBlaster"
+    }
+
+    "run app":{
+        javac masterBlaster.java
+        java masterBlaster
+    }
+}
