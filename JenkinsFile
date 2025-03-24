@@ -10,11 +10,15 @@ steps{
     }
 
     "build":{
-        mvn install "masterBlaster"
+       docker build image1 ../demo-springboot/Dockerfile
+       docker push url //optional
     }
 
-    "run app":{
-        javac masterBlaster.java
-        java masterBlaster
+    "test":{
+        echo "testing code"
+    }
+
+    "deploy":{
+        kubectl apply -f springboot-app-deployment.yaml
     }
 }
