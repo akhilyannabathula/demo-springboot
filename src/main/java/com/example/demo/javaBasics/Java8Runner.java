@@ -1,15 +1,12 @@
 package com.example.demo.javaBasics;
 
-import java.math.BigInteger;
 import java.time.LocalTime;
-import java.util.HashSet;
-import java.util.Set;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
 
-public class Runner {
+public class Java8Runner {
     public static void main(String[] args) {
     Dog d= new Dog();
     d.speak();

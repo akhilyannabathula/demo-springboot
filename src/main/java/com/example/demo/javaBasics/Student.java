@@ -1,7 +1,6 @@
-package com.example.demo.basics;
+package com.example.demo.javaBasics;
 
 import java.io.Closeable;
-import java.io.IOException;
 
 public class Student implements Comparable<Student>, Closeable {
     int id;

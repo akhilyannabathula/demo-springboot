@@ -1,17 +1,10 @@
-package com.example.demo.basics;
+package com.example.demo.javaBasics;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.sql.Driver;
-import java.sql.DriverManager;
-import java.sql.SQLException;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class Runner {
+public class EqualsCompareToCloseRunner {
     public static void main(String[] args) {
         Student student1 = new Student(1,"Akhil");
         Student student2 = new Student(2,"Akhil");
